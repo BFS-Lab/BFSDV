@@ -12,9 +12,10 @@ Injection parameters: order_id
 
 niushop_b2c_v5-master/niushop/app/model/order/LocalOrder.php
 In the orderGoodsDelivery function, the native SQL statement concatenates $order_id.
-
+![image-20250218151026180](assets/image-20250218151026180)
 Click in to track the function, niushop_b2c_v5-master/niushop/app/shop/controller/Localorder.php calls this method.
-
+![image-20250218151032514](assets/image-20250218151032514)
+![image-20250218151058528](assets/image-20250218151058528)
 Construct a data packet to trigger the function (save as post.txt).
 
 ```

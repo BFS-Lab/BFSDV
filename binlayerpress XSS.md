@@ -1,4 +1,4 @@
-### The data addition interface of the wordpress plug-in BlogBuzzTime has an XSS vulnerability
+### The data addition interface of the wordpress plug-in binlayerpress has an XSS vulnerability
 
 **Official website**: https://wordpress.org/plugins/binlayerpress/
 

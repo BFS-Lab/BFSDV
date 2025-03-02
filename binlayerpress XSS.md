@@ -20,7 +20,7 @@ When the user visits the page, the previously injected binlayerpress[code_pop] w
 
 The attacker can construct an xss payload to implement a storage-type XSS attack, so that every user who visits the page will be affected by the vulnerability.
 
-![image-20250302215717926](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302215717926.png)
+![image-20250302215717926](assets/image-20250302215717926.png)
 
 #### 2.Vulnerability verification and exploitation
 
@@ -32,6 +32,6 @@ http://example.com/page.php"><script>alert(123);</script>
 
 It is found that a pop-up window will be displayed when data is passed to the backend. The attack is successful.
 
-![image-20250302215335381](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302215335381.png)
+![image-20250302215335381](assets/image-20250302215335381.png)
 
 ![image-20250302215443164](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302215443164.png)

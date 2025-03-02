@@ -18,7 +18,7 @@
 
 In the simple-amaon-affilliate.php file, there is an interface that can pass in the parameter msg, and it will be directly output in the page in the form of echo. It has not been subjected to any security filtering verification, resulting in an XSS vulnerability.
 
-![image-20250302212559402](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302212559402.png)
+![image-20250302212559402](assets/image-20250302212559402.png)
 
 #### 2.Vulnerability verification and exploitation
 
@@ -30,4 +30,4 @@ http://localhost/wordpress/wp-admin/admin.php?page=saa-affiliate&msg=%3Cscript%3
 
 After accessing, it is found that the page pops up successfully, and there is an XSS vulnerability.
 
-![image-20250302212822630](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302212822630.png)
+![image-20250302212822630](assets/image-20250302212822630.png)

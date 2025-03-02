@@ -18,7 +18,7 @@
 
 In the anuncio.php file, when the request method is get, the parameter id is accepted, and the parameter is not filtered by any security method and is directly spliced into the SQL query statement, causing SQL injection.
 
-![image-20250302201130415](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302201130415.png)
+![image-20250302201130415](assets/image-20250302201130415.png)
 
 Therefore, attackers can construct malicious SQL statements based on this interface for injection.
 
@@ -43,4 +43,4 @@ Connection: close
 
 ```
 
-![image-20250302204404843](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302204404843.png)
+![image-20250302204404843](assets/image-20250302204404843.png)

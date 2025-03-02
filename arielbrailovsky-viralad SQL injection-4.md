@@ -16,7 +16,7 @@
 
 #### 1.Vulnerability analysis
 
-n the anuncio.php file, when the request method is post and the request parameter action is empty, the incoming ID will be directly obtained and processed by the limpia function. If the database contains the record, it will be directly spliced into the update sql statement to perform the record update operation.
+In the anuncio.php file, when the request method is post and the request parameter action is empty, the incoming ID will be directly obtained and processed by the limpia function. If the database contains the record, it will be directly spliced into the update sql statement to perform the record update operation.
 
 ![image-20250302203537209](assets/image-20250302203537209.png)
 

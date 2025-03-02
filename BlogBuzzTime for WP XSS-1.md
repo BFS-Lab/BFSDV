@@ -18,11 +18,11 @@
 
 In the admin_home.php page, it is found that the forbidden_urls parameter passed in by post method is not filtered, and the variable will be registered for persistent storage.
 
-![image-20250302214432933](asserts/image-20250302214432933.png)
+![image-20250302214432933](assets/image-20250302214432933.png)
 
 When the user visits the page, the previously injected forbidden_urls will be displayed on the page.
 
-![image-20250302214718088](asserts/image-20250302214718088.png)
+![image-20250302214718088](assets/image-20250302214718088.png)
 
 The attacker can construct an xss payload to implement a storage-type XSS attack, so that every user who visits the page will be affected by the vulnerability.
 
@@ -34,8 +34,8 @@ We can construct the following payload in the ignore an url position and insert 
 http://example.com/page.php"><script>alert(123);</script>
 ```
 
-![image-20250302213728335](asserts/image-20250302213728335.png)
+![image-20250302213728335](assets/image-20250302213728335.png)
 
 t is found that a pop-up window will be displayed when data is passed to the backend. The attack is successful.
 
-![image-20250302213948934](asserts/image-20250302213948934.png)
+![image-20250302213948934](assets/image-20250302213948934.png)

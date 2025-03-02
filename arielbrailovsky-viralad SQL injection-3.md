@@ -18,11 +18,11 @@
 
 In the anuncio.php file, when the request method is post and the request parameter action is reset, the incoming ID will be directly obtained and processed by the limpia function, and then directly spliced into the SQL query statement for execution.
 
-![image-20250302202815587](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302202815587.png)
+![image-20250302202815587](assets/image-20250302202815587.png)
 
 However, the limpia function only performs simple keyword filtering, which can be bypassed by attackers (such as case, keyword replacement, blind injection, etc.).
 
-![image-20250302202853082](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302202853082.png)
+![image-20250302202853082](assets/image-20250302202853082.png)
 
 Therefore, attackers can easily construct malicious SQL injection payloads for exploitation.
 
@@ -49,4 +49,4 @@ Connection: close
 id=2&accion=reset&nocache=0.8101696846894093&security=jltxw2pv7ui15k6ghf8q
 ```
 
-![image-20250302203112295](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302203112295.png)
+![image-20250302203112295](assets/image-20250302203112295.png)

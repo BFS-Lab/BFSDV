@@ -18,11 +18,11 @@
 
 In the anuncio.php file, when the request method is post and the request parameter action is empty, the incoming id, text and other parameters will be directly obtained and processed by the limpia function. If the database does not contain the record, it will be directly spliced into the insert sql statement to perform the record update operation.
 
-![image-20250302204131906](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302204131906.png)
+![image-20250302204131906](assets/image-20250302204131906.png)
 
 However, the limpia function only performs simple keyword filtering, which can be bypassed by attackers (such as uppercase and lowercase, keyword replacement, blind injection, etc.).
 
-![image-20250302203943402](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302203943402.png)
+![image-20250302203943402](assets/image-20250302203943402.png)
 
 Therefore, attackers can easily construct malicious sql injection payloads for exploitation.
 
@@ -51,4 +51,4 @@ id=&text=123&url=http%3A%2F%2F123&active=0&priority=5&ffamily=Arial&fsize=11&fco
 
 
 
-![image-20250302203816868](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250302203816868.png)
+![image-20250302203816868](assets/image-20250302203816868.png)

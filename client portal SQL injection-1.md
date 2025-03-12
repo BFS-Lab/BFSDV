@@ -18,11 +18,11 @@
 
 In the header.php file under the pages/admin/usersManagement/details path in the project, you can see that the uid parameter is passed in through the get method and directly spliced into the SQL query statement to execute the query. There is no filtering, which will cause a SQL injection vulnerability
 
-![image-20250312215743665](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250312215743665.png)
+![image-20250312215743665](assets/image-20250312215743665.png)
 
 The header.php file will be called and executed in userdetails.php, and userdetails.php can be triggered by calling usersManagement.php, so a path can be constructed for SQL injection exploitation
 
-![image-20250312220042579](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250312220042579.png)
+![image-20250312220042579](assets/image-20250312220042579.png)
 
 
 
@@ -51,4 +51,4 @@ Connection: close
 
 ```
 
-![image-20250312220306046](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250312220306046.png)
+![image-20250312220306046](assets/image-20250312220306046.png)

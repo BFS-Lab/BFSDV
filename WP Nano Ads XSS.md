@@ -16,7 +16,7 @@
 
 In the add_links.php file, the content passed by the user is directly inserted into the database for storage without any filtering. Attackers can construct malicious payloads to implement storage-type XSS attacks.
 
-![image-20250313211049257](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250313211049257.png)
+![image-20250313211049257](assets/image-20250313211049257.png)
 
 #### 2.Vulnerability verification and exploitation
 
@@ -30,6 +30,6 @@ test<script>alert(1)</script>
 
 On the new or modified record interface page, change the "link url" parameter to payload. Then return to the Links main page to implement a storage-type XSS injection attack
 
-![image-20250313211247802](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250313211247802.png)
+![image-20250313211247802](assets/image-20250313211247802.png)
 
-![image-20250313211342643](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250313211342643.png)
+![image-20250313211342643](assets/image-20250313211342643.png)

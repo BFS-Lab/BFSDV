@@ -14,13 +14,13 @@ related_function：getPatientAppointment()
 
 The `getPatientAppointment()` function in `php/api_patient_checkin.php` receives the `appointmentID` parameter via GET request without validating or escaping the incoming parameter. It directly concatenates this parameter into the SQL query statement, which allows attackers to insert malicious SQL statements and steal all patient data (SQL Injection).
 
-![image-20260129170944821](assets\image-20260129170944821.png)
+![image-20260129170944821](assets/image-20260129170944821.png)
 
 
 
 
 
-![image-20260129171030422](assets\image-20260129171030422.png)
+![image-20260129171030422](assets/image-20260129171030422.png)
 
 
 
@@ -61,7 +61,8 @@ Content-Type: application/json
 {"success":true,"appointment":[{"fullname":"James Kamanga","appointment_date":null,"doctor":" ","appointment":"General Consultation","time":null,"reason":"I would like you to check my balls","appnumber":"WALK202507041","id":"1"},{"fullname":"Joe Kajombo","appointment_date":null,"doctor":" ","appointment":"General Consultation","time":null,"reason":"I have swollen balls","appnumber":"WALK202507042","id":"2"},{"fullname":"Harry Maguire","appointment_date":null,"doctor":" ","appointment":"General Consultation","time":null,"reason":"I have fever","appnumber":"WALK202507043","id":"3"},{"fullname":"Mary Gama","appointment_date":null,"doctor":" ","appointment":"Follow-up Visit","time":null,"reason":"I would like to test HIV","appnumber":"WALK202507044","id":"4"},{"fullname":"Maxwel Maposa","appointment_date":null,"doctor":" ","appointment":"Urgent Care","time":null,"reason":"Fallen from a bike","appnumber":"WALK202507045","id":"5"},{"fullname":"Chikondi Gama","appointment_date":null,"doctor":" ","appointment":"Follow-up Visit","time":null,"reason":"This is very good","appnumber":"WALK202507056","id":"6"},{"fullname":"Happy Kaphukui","appointment_date":"2025-07-16 06:00:00","doctor":"Jane Mand","appointment":"Urgent Care","time":"14:00","reason":"i would like the doctor to check my swollen leg","appnumber":"APT202507167","id":"7"}]}
 ```
 
-![image-20260129172012378](assets\image-20260129172012378.png)
+![image-20260129172012378](assets/image-20260129172012378.png)
+
 
 
 

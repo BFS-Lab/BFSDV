@@ -20,7 +20,7 @@ The `getPatientAppointment()` function in `php/api_patient_checkin.php` receives
 
 
 
-![image-20260129171030422](.assets\image-20260129171030422.png)
+![image-20260129171030422](Patients Waiting Area Queue Management System SQL.assets\image-20260129171030422.png)
 
 
 
@@ -62,6 +62,7 @@ Content-Type: application/json
 ```
 
 ![image-20260129172012378](Patients Waiting Area Queue Management System SQL.assets\image-20260129172012378.png)
+
 
 
 
